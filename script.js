@@ -6,21 +6,39 @@ Lo svolgimento va fatto usando un ciclo for è non usando metodi degli array (co
 eh si!  Basta ragionare un po’.*/
 
 const invitedList = [
-    'Marco',
-    'Paolo',
-    'Signor Pizza Vegana',
-    'Fabio',
-    'Giuliano',
-    'Alessandro'
+    'pizzavegana@gmail.com',
+    'fabio@gmail.com',
+    'giuliano@gmail.com',
+    'alessandro@gmail.com',
+    'fabiola@gmail.com',
 ];
 
-const userName = prompt('Inserisci il tuo nome per controllare se sei fra gli invitati:');
+const userName = prompt('Inserisci la tua email per controllare se sei fra gli invitati:');
+
+let isUserListed = null;
 
 for (let i = 0; i < invitedList.length; i++) {
    
     if (userName === invitedList[i]) {
         console.log('sei nella lista');
-    } 
+    } else {
+        console.log('non sei nella lista');
+    }
     
 }
+
+/*
+
+for (let i = 0; i < invitedList.length; i++) {
+   
+    if (userName === invitedList[i]) {
+        isUserListed = true;
+    } else {
+        isUserListed = false;
+    }
+}
+
+console.log(isUserListed)
+
+*/
 

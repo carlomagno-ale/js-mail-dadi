@@ -18,11 +18,11 @@ const userName = prompt('Inserisci la tua email per controllare se sei fra gli i
 let isUserListed = null;
 
 for (let i = 0; i < inviteList.length; i++) {
-    isUserListed = inviteList[i];    
+    isUserListed = userName == inviteList[i];    
 }
 
-if (userName === isUserListed) {
-    console.log('sei nella lista');
+if (isUserListed) {
+    console.log(`sei nella lista!`);
 } else {
-    console.log('non sei nella lista');
+    console.log(`non sei nella lista.`);
 }

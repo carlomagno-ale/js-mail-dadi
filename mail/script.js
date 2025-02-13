@@ -18,27 +18,11 @@ const userName = prompt('Inserisci la tua email per controllare se sei fra gli i
 let isUserListed = null;
 
 for (let i = 0; i < inviteList.length; i++) {
-   
-    if (userName === inviteList[i]) {
-        console.log('sei nella lista');
-    } else {
-        console.log('non sei nella lista');
-    }
-    
+    isUserListed = inviteList[i];    
 }
 
-/*
-
-for (let i = 0; i < inviteList.length; i++) {
-   
-    if (userName === inviteList[i]) {
-        isUserListed = true;
-    } else {
-        isUserListed = false;
-    }
+if (userName === isUserListed) {
+    console.log('sei nella lista');
+} else {
+    console.log('non sei nella lista');
 }
-
-console.log(isUserListed)
-
-*/
-
